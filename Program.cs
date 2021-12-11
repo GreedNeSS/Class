@@ -22,6 +22,11 @@ namespace Class
 
             Console.WriteLine("Extended cube volume: " + cube.ShowVolume());
 
+            // Использование метода с out аргументами
+            int side1, side2, side3;
+            cube.ExpandAndGetSize(10,out side1,out side2,out side3);
+            Console.WriteLine("Размер сторон квадрата: " + side1+ ", " + side2 + ", " + side3);
+
             Console.ReadLine();
         }
     }

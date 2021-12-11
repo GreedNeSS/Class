@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace Class
 {
-
     class Cube
     {
-        int x;
-        int y;
-        int z;
+        int x, y, z;
 
         public int Width
         {
@@ -47,6 +44,14 @@ namespace Class
             Width += a;
             Height += b;
             Lengthwise += c;
+        }
+
+        public void ExpandAndGetSize(int inc, out int sideX, out int sideY, out int sideZ)
+        {
+            ExpandSize(inc, inc, inc);
+            sideX = x;
+            sideY = y;
+            sideZ = z;
         }
     }
 }
