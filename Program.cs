@@ -42,7 +42,6 @@ namespace Class
 
             // Получаем статическое свойство класса
             Console.WriteLine("номер обьекта cube1: " + cube1.GetObjectNumber());
-            Console.WriteLine("номер обьекта cube1: " + cube1.GetObjectNumber());
 
             Console.ReadLine();
         }
