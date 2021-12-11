@@ -40,6 +40,10 @@ namespace Class
             Console.WriteLine("After sides size: " + cube1.Width +
                 ", " + cube1.Height + ", " + cube1.Lengthwise);
 
+            // Получаем статическое свойство класса
+            Console.WriteLine("номер обьекта cube1: " + cube1.GetObjectNumber());
+            Console.WriteLine("номер обьекта cube1: " + cube1.GetObjectNumber());
+
             Console.ReadLine();
         }
     }

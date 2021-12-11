@@ -9,6 +9,9 @@ namespace Class
     class Cube
     {
         int x, y, z;
+        // static var
+        static int ObjectNumber = 0;
+
         // Конструктор по умолчанию
         public Cube(): this(10,10,10)
         {
@@ -21,12 +24,18 @@ namespace Class
             Width = x;
             Height = y;
             Lengthwise = z;
+            ObjectNumber++;
             /*
              * Это менее предпочтительный вариант
             this.x = x;
             this.y = y;
             this.z = z;
             */
+        }
+
+        public int GetObjectNumber()
+        {
+            return ObjectNumber;
         }
 
         public int Width
