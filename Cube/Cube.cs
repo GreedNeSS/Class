@@ -9,6 +9,25 @@ namespace Class
     class Cube
     {
         int x, y, z;
+        // Конструктор по умолчанию
+        public Cube(): this(10,10,10)
+        {
+        
+        }
+        // Конструктор с аргументами
+        public Cube(int x, int y, int z)
+        {
+            // Более предпочтительный вариант
+            Width = x;
+            Height = y;
+            Lengthwise = z;
+            /*
+             * Это менее предпочтительный вариант
+            this.x = x;
+            this.y = y;
+            this.z = z;
+            */
+        }
 
         public int Width
         {
@@ -44,6 +63,13 @@ namespace Class
             Width += a;
             Height += b;
             Lengthwise += c;
+        }
+
+        // перегрузка метода
+        public void ExpandSize(int a, int b)
+        {
+              x += a;
+              y += b;
         }
 
         public void ExpandAndGetSize(int inc, out int sideX, out int sideY, out int sideZ)
